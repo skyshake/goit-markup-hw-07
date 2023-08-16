@@ -195,22 +195,40 @@ body {
 .hero {
   padding: 124px 0px;
   text-align: center;
-  height: 436px;
-  width: 100%px;
+  height: 432px;
+  width: 100%;
   margin: 0 auto;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/hw1/hero-bg.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+    url(../images/hw1/hero-bg-mobile.png);
+
+  @media screen and (min-width: 768px) {
+    height: 600px;
+    width: 100%;
+    padding: 200px 0px;
+
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hw1/hero-bg-tablet.png);
+  }
 
   @media screen and (min-width: 1158px) {
     height: 600px;
     width: 100%;
     padding: 200px 0px;
+
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hw1/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 }
 
