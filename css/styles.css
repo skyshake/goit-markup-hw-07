@@ -214,6 +214,9 @@ body {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/hw1/hero-bg-tablet.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 
   @media screen and (min-width: 1158px) {
@@ -271,6 +274,11 @@ body {
   height: 112px;
   background: var(--cloud);
   padding: 24px 100px;
+
+  @media screen and (min-width: 428px) {
+    opacity: 0;
+    transition: all ease;
+  }
 }
 
 .benefits .icon {
