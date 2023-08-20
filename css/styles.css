@@ -671,7 +671,7 @@ body {
 
 .page-footer {
   background-color: var(--navyblue);
-  padding: 60px 0px 60px 60px;
+  padding: 60px 0px 60px 0px;
   margin: 0 auto;
 }
 
@@ -679,8 +679,22 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin-top: -12px;
-  margin-left: -50px;
-  align-items: baseline;
+  justify-content: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -12px;
+    margin-left: 50px;
+    align-items: baseline;
+  }
+
+  @media screen and (min-width: 1158px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -12px;
+    margin-left: -50px;
+    align-items: baseline;
+  }
 }
 
 .logo-link.footer {
@@ -697,6 +711,18 @@ body {
   font-weight: 400;
   line-height: 1.5;
   padding-top: 17px;
+  padding-bottom: 72px;
+  text-align: center;
+  margin: 0 auto;
+  justify-content: center;
+
+  @media screen and (min-width: 1158px) {
+    color: var(--cloud);
+    font-size: 16;
+    font-weight: 400;
+    line-height: 1.5;
+    padding-top: 17px;
+  }
 }
 
 .footer-heading {
@@ -707,7 +733,19 @@ body {
 
 .footer-block {
   margin-top: 12px;
-  margin-left: 123px;
+  margin-left: 10px;
+  text-align: center;
+  justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 12px;
+    margin-left: 24px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 12px;
+    margin-left: 123px;
+  }
 }
 
 .icon-item {
@@ -749,7 +787,13 @@ body {
 }
 
 .subscribe-form {
-  margin-left: 80px;
+  @media screen and (min-width: 768px) {
+    margin-left: 0;
+  }
+
+  @media screen and (min-width: 1158px) {
+    margin-left: 80px;
+  }
 }
 
 .subscribe-form-title {
@@ -760,10 +804,24 @@ body {
   line-height: 1.5;
   letter-spacing: 0.32px;
   color: var(--white);
+  padding-top: 72px;
+  text-align: center;
+  margin-right: 0px;
+
+  @media screen and (min-width: 1158px) {
+    display: block;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+    color: var(--white);
+  }
 }
 
 .subscribe-field {
-  width: 264px;
+  width: 328px;
+
   height: 40px;
   border-radius: 4px;
   border: 1px solid var(--white);
@@ -779,6 +837,45 @@ body {
   color: var(--white);
   margin-top: 10px;
   outline: none;
+
+  @media screen and (min-width: 768px) {
+    width: 264px;
+
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid var(--white);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+    font-size: 12px;
+    font-weight: 400;
+
+    letter-spacing: 0.48px;
+    background-color: var(--navyblue);
+    padding: 8px 16px;
+
+    color: var(--white);
+    margin-top: 10px;
+    outline: none;
+  }
+
+  @media screen and (min-width: 1158px) {
+    width: 264px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid var(--white);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+    font-size: 12px;
+    font-weight: 400;
+
+    letter-spacing: 0.48px;
+    background-color: var(--navyblue);
+    padding: 8px 16px;
+
+    color: var(--white);
+    margin-top: 10px;
+    outline: none;
+  }
 }
 
 .subscribe-field::placeholder {
@@ -787,21 +884,43 @@ body {
 
 .subscribe-button {
   color: var(--white);
-  display: inline-flex;
+  display: flex;
   align-items: center;
+  justify-content: center;
   font-weight: 500;
   line-height: 1.87;
   letter-spacing: 0.06em;
   border-radius: 4px;
   padding: 8px 24px;
   gap: 16px;
-  height: 40px;
-  margin-left: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 24px;
+  margin-bottom: 96px;
   border: none;
 
   background-color: var(--iris);
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 1158px) {
+    color: var(--white);
+    display: inline-flex;
+    align-items: center;
+    font-weight: 500;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    border-radius: 4px;
+    padding: 8px 24px;
+    gap: 16px;
+    height: 40px;
+    margin-left: 24px;
+    border: none;
+
+    background-color: var(--iris);
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .subscribe-button:hover,
