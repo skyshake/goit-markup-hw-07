@@ -33,7 +33,7 @@
           </a>
           <ul class="nav-menu list">
             <li class="item">
-              <a class="page current link" href="index.html">Studio</a>
+              <a class="page link current" href="index.html">Studio</a>
             </li>
             <li class="item">
               <a class="page link" href="portfolio.html">Portfolio</a>
@@ -71,7 +71,7 @@
         <div class="menu-container js-menu-container" id="mobile-menu">
           <!-- Hamburger Menu Close Icon-->
           <button class="menu-toggle js-close-menu">
-            <svg width="24" height="24">
+            <svg width="8" height="8">
               <use href="./images/icons.svg#hamburger-close-icon"></use>
             </svg>
           </button>
@@ -79,7 +79,7 @@
           <!-- Mobile Navigation -->
           <ul class="mob-menu-list list">
             <li class="mob-menu-item">
-              <a class="mob-menu-link link" href="./index.html">Studio</a>
+              <a class="mob-menu-link current" href="./index.html">Studio</a>
             </li>
             <li class="mob-menu-item">
               <a class="mob-menu-link link" href="./portfolio.html"
@@ -93,9 +93,9 @@
           </ul>
 
           <!-- Mobile Contacts Address -->
-          <div>
+          <div class="mob-cantacts-address">
             <address class="mob-address">
-              <a class="mob-address-link link" href="tel:+380441111111"
+              <a class="mob-address-link current" href="tel:+380441111111"
                 >+11 (000) 111-11-11</a
               >
             </address>
@@ -285,6 +285,10 @@
           <ul class="team list">
             <li class="item">
               <img
+                srcset="
+                  ../images/studio/mark-guerrero.jpg    1x,
+                  ../images/studio/mark-guerrero@2x.jpg 2x
+                "
                 src="./images/studio/mark-guerrero.jpg"
                 alt="Mark Guerrero"
                 width="270"
@@ -354,6 +358,10 @@
             </li>
             <li class="item">
               <img
+                srcset="
+                  ../images/studio/tom-ford.jpg    1x,
+                  ../images/studio/tom-ford@2x.jpg 2x
+                "
                 src="./images/studio/tom-ford.jpg"
                 alt="Tom Ford"
                 width="270"
@@ -419,6 +427,10 @@
             </li>
             <li class="item">
               <img
+                srcset="
+                  ../images/studio/camila-garcia.jpg    1x,
+                  ../images/studio/camila-garcia@2x.jpg 2x
+                "
                 src="./images/studio/camila-garcia.jpg"
                 alt="Camila Garcia"
                 width="270"
@@ -484,6 +496,10 @@
             </li>
             <li class="item">
               <img
+                srcset="
+                  ../images/studio/daniel-wilson.jpg    1x,
+                  ../images/studio/daniel-wilson@2x.jpg 2x
+                "
                 src="./images/studio/daniel-wilson.jpg"
                 alt="Daniel Wilson"
                 width="270"
@@ -758,10 +774,8 @@
             <input
               class="form-checkbox visually-hidden"
               type="checkbox"
-              checked="uncheck"
               id="0"
               name="user-terms"
-              checked
             />
             <svg class="form-checkbox-icon" width="16" height="16">
               <use href="./images/icons.svg#checkbox-icon"></use>
