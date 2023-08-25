@@ -218,9 +218,9 @@ body {
 
 .hero {
   @media screen and (max-width: 767px) {
-    padding: 200px 0px;
+    padding: 120px 0px;
     text-align: center;
-    height: 600px;
+    height: auto;
     margin: 0 auto;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -279,7 +279,7 @@ body {
     font-weight: 700;
     line-height: 40px;
     letter-spacing: 0.72px;
-    margin-bottom: 30px;
+    margin-bottom: 72px;
   }
 }
 
@@ -381,9 +381,13 @@ body {
 .benefits .description {
   color: var(--slate);
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.71;
   letter-spacing: 0.32px;
+
+  @media screen and (min-width: 1158px) {
+    font-weight: 400;
+  }
 }
 
 /* What We Do Section */
@@ -442,6 +446,13 @@ body {
   margin-left: 24px;
   margin-top: 30px;
   min-width: 264px;
+
+  @media screen and (max-width: 767px) {
+    flex-basis: calc(100% / 4 - 24px);
+    margin-left: 24px;
+    margin-top: 72px;
+    min-width: 264px;
+  }
 }
 
 .team .name,
@@ -663,7 +674,7 @@ body {
 
 .page-footer {
   background-color: var(--navyblue);
-  padding: 60px 0px 60px 60px;
+  padding: 97px 0px 96px 60px;
   margin: 0 auto;
 }
 
@@ -730,7 +741,7 @@ body {
     justify-content: center;
     margin-left: 24px;
     margin-top: 72px;
-    text-align: center;
+    text-align: left;
   }
 
   @media screen and (max-width: 767px) {
@@ -738,6 +749,12 @@ body {
     margin-left: 0;
     margin-top: 72px;
     text-align: center;
+  }
+}
+
+.footer-address {
+  @media screen and (max-width: 1158px) {
+    margin-bottom: 72px;
   }
 }
 
@@ -775,7 +792,7 @@ body {
 .social-footer {
   display: flex;
   justify-content: center;
-  padding-top: 10px;
+  padding-top: 16px;
   gap: 16px;
 }
 
@@ -1120,6 +1137,7 @@ body {
   justify-content: center;
 
   margin-left: auto;
+  margin-right: 24px;
   padding: 0;
   background-color: var(--white);
   cursor: pointer;
@@ -1147,7 +1165,7 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 48px 40px;
+  padding: 48px 0 40px 40px;
   background-color: var(--white);
   z-index: 200;
 
@@ -1211,7 +1229,7 @@ body {
   color: var(--slate);
 }
 .mob-address-link {
-  font-size: 24px;
+  font-size: 36px;
   font-style: normal;
   font-weight: 700;
   line-height: 0.9;
@@ -1234,7 +1252,7 @@ body {
   justify-content: flex-start;
   margin-top: -96px;
   margin-bottom: -200px;
-  gap: 24px;
+  gap: 36px;
 }
 
 .modal-footer .link:hover,
