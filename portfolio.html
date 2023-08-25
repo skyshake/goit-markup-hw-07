@@ -34,10 +34,10 @@
           </a>
           <ul class="nav-menu list">
             <li class="item">
-              <a class="page link" href="index.html">Studio</a>
+              <a class="page link current" href="index.html">Studio</a>
             </li>
             <li class="item">
-              <a class="page current link" href="portfolio.html">Portfolio</a>
+              <a class="page link" href="portfolio.html">Portfolio</a>
             </li>
             <li class="item">
               <a class="page link" href="#">Contacts</a>
@@ -57,6 +57,116 @@
             >
           </li>
         </ul>
+
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-icon" width="32" height="32">
+            <use href="./images/icons.svg#hamburger-open-icon"></use>
+          </svg>
+        </button>
+
+        <!-- Hamburger Menu Close Icon and Navigations-->
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <!-- Hamburger Menu Close Icon-->
+          <button class="menu-toggle js-close-menu">
+            <svg width="8" height="8">
+              <use href="./images/icons.svg#hamburger-close-icon"></use>
+            </svg>
+          </button>
+
+          <!-- Mobile Navigation -->
+          <ul class="mob-menu-list list">
+            <li class="mob-menu-item">
+              <a class="mob-menu-link current" href="./index.html">Studio</a>
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+
+          <!-- Mobile Contacts Address -->
+          <div class="mob-cantacts-address">
+            <address class="mob-address">
+              <a class="mob-address-link current" href="tel:+380441111111"
+                >+11 (000) 111-11-11</a
+              >
+            </address>
+            <address class="mob-address">
+              <a class="contact link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </address>
+          </div>
+
+          <div class="modal-block">
+            <ul class="modal-footer list">
+              <li class="icon-item">
+                <a
+                  class="link"
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Link to Instagram"
+                >
+                  <svg class="icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="icon-item">
+                <a
+                  class="link"
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Link to Instagram"
+                >
+                  <svg class="icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="icon-item">
+                <a
+                  class="link"
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Link to Instagram"
+                >
+                  <svg class="icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="icon-item">
+                <a
+                  class="link"
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Link to Instagram"
+                >
+                  <svg class="icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -404,5 +514,8 @@
         </div>
       </div>
     </footer>
+
+    <!-- HAMBURGER MENU -->
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
