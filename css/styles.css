@@ -366,7 +366,7 @@ body {
     margin-bottom: 10px;
   }
 
-  @media screen and (max-width: 1158px) {
+  @media screen and (max-width: 1157px) {
     color: var(--navyblue);
 
     line-height: 20px;
